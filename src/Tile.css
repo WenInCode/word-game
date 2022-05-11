@@ -1,5 +1,30 @@
 .Tile {
-    width: 64px;
-    height: 64px;
-    border: 2px solid black;
+  width: 64px;
+  height: 64px;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.Tile.Incomplete {
+  border-color: var(--color-tone-4);
+}
+
+.Tile.Unused {
+  background-color: var(--color-tone-2);
+  border-color: var(--color-tone-2);
+}
+
+.Tile.Correct {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+.Tile.Present {
+  background-color: var(--yellow);
+  border-color: var(--yellow);
 }

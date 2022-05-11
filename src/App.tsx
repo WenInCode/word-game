@@ -1,10 +1,10 @@
 import "./App.css";
-import Tile from "./Tile";
+import Tile, { TileStatus } from "./Tile";
 
 function App() {
   return (
     <div className="App">
-      <Tile />
+      <Tile status={TileStatus.CORRECT} letter="A" />
     </div>
   );
 }
